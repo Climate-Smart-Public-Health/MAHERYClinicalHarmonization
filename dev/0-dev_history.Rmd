@@ -130,3 +130,15 @@ devtools::build(vignettes = TRUE)
 fusen::init_share_on_github()
 ```
 
+# Extra Packages for VSCode
+
+```{r}
+install.packages(c(
+  "languageserver", # R language server
+  "rlang", # language server support
+  "jsonlite", # JSON support
+  "remotes" # VSCode R tools
+))
+
+remotes::install_github("nx10/httpgd") #
+```

@@ -1,0 +1,75 @@
+---
+title: "flat_tracking_inputs.Rmd empty"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r development, include=FALSE}
+library(testthat)
+```
+
+```{r development-load}
+# Load already included functions if relevant
+pkgload::load_all(export_all = FALSE)
+```
+
+To start off, we're going to set up tracking for the input data.
+
+We'll do this in the same manner that we did for 
+the MAHERYCohortHarmonization package, so we'll
+just import that package here and use the same functions.
+
+```{r}
+# install the development version of the package from GitHub
+# remotes::install_github("Climate-Smart-Public-Health/MAHERYCohortHarmonization")
+library(MAHERYCohortHarmonization)
+```
+
+Other libraries we'll need:
+
+```{r}
+library(dplyr)
+library(googledrive)
+library(stringr)
+```
+
+Note that the interactions with Google Drive will require you to authenticate your Google account.
+Just like in the MAHERYCohortHarmonization package, I'm using a service account to access the Google Drive files,
+authenticated by a JSON key file.
+
+# tracking_inputs
+
+```{r development-tracking_inputs}
+# Prepare the code of your function here
+```
+
+```{r function-tracking_inputs}
+#' tracking_inputs Title
+#'
+#' @return 1
+#' @export
+#'
+#' @examples
+tracking_inputs <- function() {
+  1
+}
+```
+
+```{r examples-tracking_inputs}
+tracking_inputs()
+```
+
+```{r tests-tracking_inputs}
+test_that("tracking_inputs works", {
+  expect_true(inherits(tracking_inputs, "function"))
+})
+```
+
+
+```{r development-inflate, eval=FALSE}
+# Run but keep eval=FALSE to avoid infinite loop
+# Execute in the console directly
+fusen::inflate(flat_file = "dev/flat_tracking_inputs.Rmd", vignette_name = "Go further")
+```
+

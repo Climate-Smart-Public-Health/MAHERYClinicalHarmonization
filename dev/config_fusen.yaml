@@ -1,6 +1,6 @@
 flat_full.Rmd:
   path: dev/flat_full.Rmd
-  state: active
+  state: false
   R:
   - R/my_median.R
   - R/my_other_median.R
